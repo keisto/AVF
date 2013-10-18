@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tony Keiser AVF</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap (for use of icons) -->
-    <!-- <link href="boot/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="body">
-		<h1>Hello,</h1><h1 id="fname"><input class="iBox" id="nameInput" type="text" placeholder="What do they call you?"/></h1>
-			<ul>
-				<li class="nav">
-				   <button type="button" class="btn btn-default btn-lg">
-				   <span class= "icon qrcode"></span> QR Scanner
-				</li>
-				<li class="nav">
-				   <button type="button" class="btn btn-default btn-lg">
-				   <span class="icon camera"></span> Camera
-				</li>
-				<li class="nav">
-				   <button type="button" class="btn btn-default btn-lg">
-				   <span class="icon location"></span> Geograph
-				</li>
-				<li class="nav">
-				   <button type="button" class="btn btn-default btn-lg">
-				   <span class="icon compass"></span> Compass
-				</li>
-				<li class="nav">
-				   <button type="button" class="btn btn-default btn-lg">
-				   <span class="icon network"></span> Network
-				</li>
-			</ul>
-		</div>
-		<div class="oddbody">
-				<ul>
-					<li class="nav">
-						<span class="icon search"></span><input class="iBoxSearch" id="sportInput" type="text" placeholder="Load ALL Teams -->" disabled="disabled"/><button class="sport" id="sportLoad"/>
-					</li><br>
-					<li class="nav">
-						<span class="icon search"></span><input class="iBoxSearch" id="instaInput" type="text" placeholder="Search Instagram?"/>
-						<button class="instagram" id="insta"/>
-					</li>
-				</ul>
-		</div>
-		<div class="hide" id="feeds">
-				<div id="instaStatus"></div>
-				<ul id="instaData"></ul>	
-				<div id="sportStatus"></div>
-				<ul id="sportData"></ul>
-					
-		</div>
-		
+	<head>
+	    <title>Tony Keiser AVF</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	    <link href="css/style.css" rel="stylesheet"> 
+	</head>
+
+<!-- Body -->
+	<body>
+<!-- Navigation -->
+	  	<ul class="navbar">
+			<li class="nav" id="browser">
+			   <span class= "icon browser"></span><br><p class="navigation">Browser</p>		</li>
+			<li class="nav" id="camera">
+			   <span class="icon camera"></span><br><p class="navigation">Camera</p>			</li>
+			<li class="nav" id="location">
+			   <span class="icon location"></span><br><p class="navigation">Geograph</p>
+			</li>
+			<li class="nav" id="compass">
+			   <span class="icon compass"></span><br><p class="navigation">Compass</p>
+			</li>
+			<li class="nav" id="network">
+			   <span class="icon network"></span><br><p class="navigation">Network</p>
+			</li>
+		</ul>
 				
-		<div class="footer">
-			<h3>GitHub Links:</h3>
+<!-- Header/Greeting -->
+	<div class="header">
+		<h1 class="greeting">Hello,</h1>
+			<h1 class="greeting" id="fname">
+				<input class="iBox" id="nameInput" type="text" placeholder="What do they call you?"/>
+			</h1>
+	</div>
+	
+<!-- Featured Links -->
+	<div class="feature">
+		<ul class="ulsearch">
+			<li class="searchnav">
+				<span class="icon search"></span><input class="iBoxSearch" id="sportInput" type="text" placeholder="Load ALL Teams -->" disabled="disabled"/>
+				<p class="sport" id="sportLoad"></p>
+			</li>
+			<li class="searchnav">
+				<span class="icon search"></span><input class="iBoxSearch" id="instaInput" type="text" placeholder="Search Instagram?"/>
+				<p class="instagram" id="insta"></p>
+			</li>
+		</ul>
+	</div>
+	
+<!-- Link Feedbacks -->
+	<div class="hide" id="feeds">
+		<div id="instaStatus"></div>
+			<ul id="instaData"></ul>	
+		<div id="sportStatus"></div>
+			<ul id="sportData"></ul>			
+	</div>
 			
-				<h5><a href="https://github.com/keisto/AVF">AVF GitHub Repository</a></h5>
-				<h5><a href="http://keisto.github.io/AVF/index.html">AVF GitHub Pages (Live View)</a></h5>
-				<br>
+<!-- Footer -->				
+	<div class="footer">
+		<h3>GitHub Links:</h3>	
+			<h5><a href="https://github.com/keisto/AVF">AVF GitHub Repository</a></h5>
+			<h5><a href="http://keisto.github.io/AVF/index.html">AVF GitHub Pages (Live View)</a></h5>		
+			<br>
 			<small class="copy">&copy; 1310 Tony Keiser AVF</small>
-		</div>
-    <script src="js/jquery.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+	</div>
+<!-- JavaScript(s) -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jqm.js"></script>
+	<script src="cordova.js"></script>
+	<script src="js/script.js"></script>
+	</body>
 </html>
 
